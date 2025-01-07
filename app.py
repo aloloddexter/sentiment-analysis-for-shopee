@@ -13,6 +13,7 @@ app = Flask(__name__)
 
 # Load pre-trained model and tokenizer from Hugging Face Hub
 MODEL_CARD = "letejo/shopee-product-sentiment-analysis"
+token = "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"
 tokenizer = XLMRobertaTokenizer.from_pretrained(MODEL_CARD)
 model = AutoModelForSequenceClassification.from_pretrained(MODEL_CARD)
 
